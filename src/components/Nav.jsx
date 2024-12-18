@@ -9,7 +9,7 @@ const Nav = () => {
     setIsOpen(!isOpen);
   }
   return (
-    <header className="padding-x py-10 absolute z-10 w-full">
+    <header className="padding-x py-10 z-50 absolute  w-full">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} alt=" logo" height={29} width={130} />
@@ -39,7 +39,7 @@ const Nav = () => {
         </div>
       </nav>
       {isOpen && (
-        <div className="w-full overflow-y-hidden z-50 flex flex-col absolute top-0 right-0 items-end padding-x py-10 bg-slate-300 h-screen">
+        <div className="w-full  overflow-hidden z-50 flex flex-col fixed top-0 right-0 items-end padding-x py-10 bg-slate-300 h-screen">
           <div>
             <img
               onClick={toggleMenu}
