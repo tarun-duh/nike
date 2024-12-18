@@ -39,7 +39,7 @@ const Nav = () => {
         </div>
       </nav>
       {isOpen && (
-        <div className="w-full flex flex-col absolute top-0 right-0 items-end padding-x py-10 bg-slate-100 h-screen">
+        <div className="w-full overflow-y-hidden z-50 flex flex-col absolute top-0 right-0 items-end padding-x py-10 bg-slate-300 h-screen">
           <div>
             <img
               onClick={toggleMenu}
@@ -54,7 +54,7 @@ const Nav = () => {
             {navLinks.map((i) => (
               <li key={i.label} className="text-white mt-10 font-bold text-xl">
                 <a
-                  className="font-montserrat  leading-normal text-lg text-slate-gray "
+                  className="font-montserrat  leading-normal text-lg text-black"
                   href={i.href}
                 >
                   {i.label}
